@@ -45,7 +45,13 @@ export default function KPICards({ tenants, overrides }) {
   }));
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-3 mb-6">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-10 gap-3 mb-6">
+      <Card
+        label="Toplam POC"
+        value={tenants.length}
+        sub="2026 tüm kayıtlar"
+        accent="bg-gray-900 border-gray-700"
+      />
       <Card label="Active POCs" value={statusCount.active || 0} icon={Clock} accent="bg-indigo-950 border-indigo-800" />
       <Card label="Win Rate" value={winRate} icon={TrendingUp}
         sub={`${won.length} won / ${concluded.length} concluded`}
