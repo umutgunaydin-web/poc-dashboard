@@ -49,7 +49,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-950 text-gray-100">
-      <Header />
+      <Header lastSync={data?.fetchedAt} />
 
       <main className="px-6 py-6 max-w-screen-xl mx-auto">
         {error && (
