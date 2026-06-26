@@ -80,7 +80,7 @@
     {
       "id": "8",
       "tenantName": "tazecicek.alo-tech.com",
-      "accountName": "AloTech",
+      "accountName": "Taze Çiçek",
       "active": true,
       "createdTime": "2026-06-19T17:23:00",
       "lastActivity": "2026-06-19T17:23:00",
@@ -465,7 +465,7 @@
     {
       "id": "43",
       "tenantName": "leadgeneration.alo-tech.com",
-      "accountName": "AloTech",
+      "accountName": "Lead Generation",
       "active": true,
       "createdTime": "2026-03-03T17:20:00",
       "lastActivity": "2026-03-03T17:20:00",
@@ -564,7 +564,7 @@
     {
       "id": "52",
       "tenantName": "protel-test.alo-tech.com",
-      "accountName": "AloTech",
+      "accountName": "Protel",
       "active": true,
       "createdTime": "2026-02-12T14:58:00",
       "lastActivity": "2026-02-12T15:00:00",
@@ -707,7 +707,7 @@
     {
       "id": "65",
       "tenantName": "bovo.alo-tech.com",
-      "accountName": "AloTech",
+      "accountName": "Bovo",
       "active": true,
       "createdTime": "2026-01-05T12:37:00",
       "lastActivity": "2026-01-05T12:37:00",
