@@ -98,8 +98,8 @@ export default function POCTable({ tenants, overrides, setOverrides, onExclude }
   const [status, setStatus]     = useState("all");
   const [ownerFilter, setOwnerFilter] = useState("all");
   const [search, setSearch]     = useState("");
-  const [sortField, setSortField] = useState("owner");
-  const [sortAsc, setSortAsc]     = useState(true);
+  const [sortField, setSortField] = useState("start");
+  const [sortAsc, setSortAsc]     = useState(false);
   const [saveError, setSaveError] = useState(null);
   const { user, role } = useAuth();
   const canEdit = role === "editor" || role === "admin";
@@ -177,7 +177,10 @@ export default function POCTable({ tenants, overrides, setOverrides, onExclude }
 
   function toggleSort(field) {
     if (sortField === field) setSortAsc(a => !a);
-    else { setSortField(field); setSortAsc(true); }
+    else {
+      setSortField(field);
+      setSortAsc(field === "start" ? false : true);
+    }
   }
 
   const filtered = tenants
