@@ -69,7 +69,7 @@
     {
       "id": "7",
       "tenantName": "elysian.callcenterstudio.com",
-      "accountName": "Call Center Studio",
+      "accountName": "Elysian(Telkom)",
       "active": false,
       "createdTime": "2026-05-21T16:26:00",
       "lastActivity": "2026-06-22T00:07:00",
@@ -146,7 +146,7 @@
     {
       "id": "14",
       "tenantName": "excitepanacea.callcenterstudio.com",
-      "accountName": "Call Center Studio",
+      "accountName": "Excite Partner",
       "active": true,
       "createdTime": "2026-06-01T10:54:00",
       "lastActivity": "2026-06-01T10:54:00",
@@ -179,7 +179,7 @@
     {
       "id": "17",
       "tenantName": "castrotravel.callcenterstudio.com",
-      "accountName": "Call Center Studio",
+      "accountName": "Globe Telecom",
       "active": true,
       "createdTime": "2026-05-07T16:32:00",
       "lastActivity": "2026-05-22T10:00:00",
@@ -256,7 +256,7 @@
     {
       "id": "24",
       "tenantName": "transcosmos.callcenterstudio.com",
-      "accountName": "Call Center Studio",
+      "accountName": "Transcosmos",
       "active": true,
       "createdTime": "2026-05-07T17:30:00",
       "lastActivity": "2026-05-08T13:19:00",
@@ -278,7 +278,7 @@
     {
       "id": "26",
       "tenantName": "lalamove.callcenterstudio.com",
-      "accountName": "Call Center Studio",
+      "accountName": "Globe Telecom",
       "active": true,
       "createdTime": "2026-05-06T17:14:00",
       "lastActivity": "2026-05-06T17:14:00",
@@ -300,7 +300,7 @@
     {
       "id": "28",
       "tenantName": "globalplayhub.callcenterstudio.com",
-      "accountName": "Call Center Studio",
+      "accountName": "GiveDirectly",
       "active": true,
       "createdTime": "2026-03-24T12:55:00",
       "lastActivity": "2026-05-06T04:09:00",
@@ -333,7 +333,7 @@
     {
       "id": "31",
       "tenantName": "hollywoodbets.callcenterstudio.com",
-      "accountName": "Call Center Studio",
+      "accountName": "Globe Telecom",
       "active": true,
       "createdTime": "2026-04-16T19:59:00",
       "lastActivity": "2026-04-16T19:59:00",
@@ -377,7 +377,7 @@
     {
       "id": "35",
       "tenantName": "nevadagastro.callcenterstudio.com",
-      "accountName": "Call Center Studio Inc",
+      "accountName": "Nevada Gastro",
       "active": true,
       "createdTime": "2026-04-06T11:38:00",
       "lastActivity": "2026-04-06T16:15:00",
@@ -542,7 +542,7 @@
     {
       "id": "50",
       "tenantName": "cibi.callcenterstudio.com",
-      "accountName": "Globe Telekom",
+      "accountName": "Globe Telecom",
       "active": true,
       "createdTime": "2026-02-25T11:10:00",
       "lastActivity": "2026-02-25T11:10:00",
@@ -663,7 +663,7 @@
     {
       "id": "61",
       "tenantName": "megaworld.callcenterstudio.com",
-      "accountName": "Globe Telekom",
+      "accountName": "Globe Telecom",
       "active": true,
       "createdTime": "2026-01-21T09:47:00",
       "lastActivity": "2026-01-21T10:57:00",
