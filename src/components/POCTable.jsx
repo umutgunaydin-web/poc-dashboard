@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ChevronUp, ChevronDown, Edit2, Check, X, Trash2 } from "lucide-react";
 import { supabase } from "../lib/supabase";
 import { useAuth } from "../context/AuthContext";
+import { isLocalDev } from "../lib/config";
 
 const OWNERS   = ["Gülsüm Ügüt", "Eren Şirin", "Ali Kahya", "Bertuğ Demir"];
 const STATUSES = ["active", "waiting", "won", "lost"];
@@ -103,6 +104,7 @@ export default function POCTable({ tenants, overrides, setOverrides, onExclude }
   const [saveError, setSaveError] = useState(null);
   const { user, role } = useAuth();
   const canEdit = role === "editor" || role === "admin";
+  const showTenant = isLocalDev();
 
   async function saveField(tenantId, field, value) {
     if (!user?.email) {
@@ -192,7 +194,7 @@ export default function POCTable({ tenants, overrides, setOverrides, onExclude }
     .filter(t => ownerFilter === "all" || resolveOwner(t, overrides) === ownerFilter)
     .filter(t =>
       t.accountName.toLowerCase().includes(search.toLowerCase()) ||
-      t.tenantName.toLowerCase().includes(search.toLowerCase())
+      (showTenant && t.tenantName.toLowerCase().includes(search.toLowerCase()))
     )
     .sort((a, b) => {
       let va, vb;
@@ -299,7 +301,7 @@ export default function POCTable({ tenants, overrides, setOverrides, onExclude }
             <tr>
               <th className="text-left px-4 py-3 w-20">Platform</th>
               <th className="text-left px-4 py-3">Müşteri</th>
-              <th className="text-left px-4 py-3">Tenant</th>
+              {showTenant && <th className="text-left px-4 py-3">Tenant</th>}
               <SortTh field="owner"    label="POC Owner" />
               <th className="text-left px-4 py-3">Durum</th>
               <SortTh field="start"    label="POC Başlangıç" />
@@ -322,9 +324,11 @@ export default function POCTable({ tenants, overrides, setOverrides, onExclude }
                   <td className="px-4 py-3 font-medium text-white">
                     {t.accountName}
                   </td>
-                  <td className="px-4 py-3 text-gray-400 font-mono text-xs">
-                    {t.tenantName}
-                  </td>
+                  {showTenant && (
+                    <td className="px-4 py-3 text-gray-400 font-mono text-xs">
+                      {t.tenantName}
+                    </td>
+                  )}
                   <td className="px-4 py-3">
                     <EditableCell
                       value={ov.poc_owner || t.pocOwner || null}

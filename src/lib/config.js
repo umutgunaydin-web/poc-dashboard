@@ -12,3 +12,7 @@ export const MONTH_LABELS_2026 = [
   "Oca", "Şub", "Mar", "Nis", "May", "Haz",
   "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara",
 ];
+
+export function isLocalDev() {
+  return typeof window !== "undefined" && window.location.hostname === "localhost";
+}
